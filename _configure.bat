@@ -1,0 +1,13 @@
+set GLEW_HOME=C:\Users\Fabian\Documents\CGSee\glew-1.10.0
+set CMAKE_PREFIX_PATH=C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64
+set QT_DIR=C:\Qt\qt-5.2.0\qtbase\bin
+set LIBZEUG_HOME=H:\R2-D2\libzeug-master
+set GLFW_HOME=H:\R2-D2\glfw-3.0.4
+set GLFW_LIB_R=H:\R2-D2\glfw-3.0.4\build\src\Release
+set GLFW_LIB_D=H:\R2-D2\glfw-3.0.4\build\src\Debug
+set GLM_HOME=H:\R2-D2\glm
+set QT_QPA_PLATFORM_PLUGIN_PATH=%QT_DIR%/plugins/platforms
+set ASSIMP_HOME=C:\Users\Fabian\Documents\CGSee\assimp--3.0.1270-sdk
+set ERSTE=C:\Users\Fabian\Documents\CGSee\assimp--3.0.1270-sdk\bin\assimp_release-dll_x64
+set ZWEITE=C:\Users\Fabian\Documents\CGSee\glew-1.10.0\bin\Release\x64
+set PATH=%ERSTE%;%LIBZEUG_HOME%/build/Debug;%LIBZEUG_HOME%/build/Release;%ZWEITE%;%GLEW_HOME%/bin;%QT_DIR%/bin;%GLFW_HOME%;%GLFW_LIB_R%;%GLFW_LIB_D%;%PATH%;
