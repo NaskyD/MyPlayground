@@ -2,8 +2,10 @@
 
 // Task_2_2 - ToDo Begin
 
-// uniform mat4 ...;
-// ...
+uniform mat4 viewProjectionInv;
+uniform vec3 eye;
+uniform vec3 ico_center;
+uniform mat4 transform;
 
 in vec3 a_vertex;
 
@@ -16,8 +18,8 @@ void main()
 
 	// ToDo: Retrive the eye vector and pass to next stage
 	
-	//v_eye = ...;
-	//gl_Position = transform * vec4(a_vertex, 1.0);
+	v_eye =  a_vertex - eye + ico_center;
+	gl_Position = transform * vec4(a_vertex, 1.0);
 }
 
 // Task_2_2 - ToDo End

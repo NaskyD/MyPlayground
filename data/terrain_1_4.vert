@@ -1,11 +1,11 @@
-#version 150
+#version 140
 
 // Task_1_4 - ToDo Begin
 
 uniform mat4 transform;
 uniform sampler2D height;
 
-in vec3 a_vertex;
+// in ### a_vertex;
 
 // out ... ;
 
@@ -20,7 +20,7 @@ void main()
 	// (It is not required to be absolutely physically correct, but only
 	// to depend on the terrains slope.
 
-	gl_Position = transform * vec4(a_vertex, 1.0);
+	gl_Position = transform * vec4(0.0, 0.0, 0.0, 1.0);
 	
 	// Task_1_4 - ToDo End
 }
