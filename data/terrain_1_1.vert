@@ -1,14 +1,14 @@
-#version 140
+#version 150
 
 // Task_1_1 - ToDo Begin
 
 uniform mat4 transform;
 
-// in ### a_vertex;
+in vec3 a_vertex;
 
 void main()
 {
-	gl_Position = transform * vec4(0.0, 0.0, 0.0, 1.0);
+	gl_Position = transform * vec4(a_vertex, 1.0);
 
 	// Task_1_1 - ToDo End
 }

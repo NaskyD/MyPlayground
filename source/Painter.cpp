@@ -88,16 +88,16 @@ bool Painter::initialize()
 
 
 	// uebung 1_1
-	//m_programs[PaintMode1] = createBasicShaderProgram("data/terrain_1_1.vert", "data/terrain_1_1.frag");
+	m_programs[PaintMode1] = createBasicShaderProgram("data/terrain_1_1.vert", "data/terrain_1_1.frag");
 
 	// uebung 1_2
-	//m_programs[PaintMode2] = createBasicShaderProgram("data/terrain_1_2.vert", "data/terrain_1_2.frag");
+	m_programs[PaintMode2] = createBasicShaderProgram("data/terrain_1_2.vert", "data/terrain_1_2.frag");
 
 	// uebung 1_3
-	//m_programs[PaintMode3] = createBasicShaderProgram("data/terrain_1_3.vert", "data/terrain_1_3.frag");
+	m_programs[PaintMode3] = createBasicShaderProgram("data/terrain_1_3.vert", "data/terrain_1_3.frag");
 
 	// uebung 1_4 +
-	//m_programs[PaintMode4] = createBasicShaderProgram("data/terrain_1_4.vert", "data/terrain_1_4.frag"); 
+	m_programs[PaintMode4] = createBasicShaderProgram("data/terrain_1_4.vert", "data/terrain_1_4.frag"); 
 	//m_programs[PaintMode5] = createBasicShaderProgram("data/terrain_1_5.vert", "data/terrain_1_5.frag");
 
 	// ...
@@ -486,7 +486,7 @@ void Painter::paint_1_1(float /*timef*/)
     {
         // Note: you can use glLineWidth(...) to adjust ... :D - remember to setup default when done painting.
         program->bind();
-        //      program->setUniformValue("color", QVector3D(0.4f, 0.4f, 0.4f)); // yes, you can change that
+        //program->setUniformValue("color", QVector3D(0.4f, 0.4f, 0.4f)); // yes, you can change that
         //terrain->draw(*this, GL_LINE_STRIP);
         program->setUniformValue("color", QVector3D(0.8f, 0.8f, 0.8f)); // ... and that one too. if you like.
         terrain->draw(*this);
